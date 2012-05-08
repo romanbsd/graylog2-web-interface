@@ -1,22 +1,21 @@
 source :rubygems
 
-gem 'rack', '~> 1.3.5'
+gem 'rails', '~> 3.2.3'
 gem 'rake', '~> 0.9.2'
-gem 'rails', '~> 3.1.3'
-gem 'json', '~> 1.5.1'
+gem 'json', '~> 1.5'
 gem 'chronic', '~> 0.6.7'
 gem 'pony', '~> 1.1'  # unusual version number
 gem 'graylog2-declarative_authorization', '~> 0.5.2', :require => 'declarative_authorization'
-gem 'hoptoad_notifier', '~> 2.4.9'
 gem 'rpm_contrib', '~> 2.1.1'
-gem 'mongoid', '2.4.5'
-gem "tire", "~> 0.3.12"
-gem 'bson', "~> 1.3.1"
-gem 'bson_ext', "~> 1.3.1", :platforms => :ruby
-gem 'home_run', '~> 1.0.2', :platforms => :ruby
+gem 'mongoid', '2.4.9'
+gem 'tire', :git => 'https://github.com/romanbsd/tire.git'
+gem 'bson', "~> 1.6.2"
+gem 'bson_ext', '~> 1.6.2', :platforms => :ruby
+gem 'home_run', '~> 1.0', :platforms => :ruby
 gem 'SystemTimer', '~> 1.2.3', :require => 'system_timer', :platforms => :ruby_18
 gem 'rails_autolink', '~> 1.0.4'
-gem 'kaminari', '~> 0.12.4'
+gem 'kaminari', '~> 0.13'
+gem 'thin'
 
 group :development, :test do
   # might be useful to generate fake data in development
